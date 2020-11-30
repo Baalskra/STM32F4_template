@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+/Debug
+/settings
+/STM32F4_template.dep
