@@ -97,7 +97,7 @@ public:
 			SetSystemSourceInternalCrystal();
 		
 		// Жду готовности тактирования мк.
-		if(IsSystemClockReady())
+		if(!IsSystemClockReady())
 			while(1); // Не реальный случай
 		
 		_Enable<SYSCFG>();

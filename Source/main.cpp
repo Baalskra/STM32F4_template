@@ -13,6 +13,9 @@ void main(void)
 	Leds::Initialize();
 	Buttons::Initialize();
 	
+	Led2::Off();
+	Led3::Off();
+	
 	while(1)
 	{
 		if(Key0::IsPressed() && last_key_state == Released)
