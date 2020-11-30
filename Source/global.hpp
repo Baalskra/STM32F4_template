@@ -4,10 +4,6 @@
 #include "Led.hpp"
 #include "PinList.hpp"
 
-//const flash::Voltage mcu_voltage = flash::Voltage::Voltage_2_7_to_3_6;
-//const uint32_t hsi_value = 16000000;
-//const uint32_t hse_value = 8000000;
-
 using Led2 		= Led<GPIOA, 6, VDD>;
 using Led3 		= Led<GPIOA, 7, VDD>;
 using Leds      = PinList<Led2, Led3>;

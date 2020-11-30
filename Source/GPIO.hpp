@@ -4,6 +4,7 @@
 #include "GPIOE.hpp"
 #include "RCC.hpp"
 #include "USART1.hpp"
+#include "EXTI.hpp"
 
 class GPIO: protected RCC
 {
