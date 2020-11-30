@@ -709,7 +709,7 @@
                 </option>
                 <option>
                     <name>IlinkOutputFile</name>
-                    <state>STM32F4.out</state>
+                    <state>STM32F4_template.out</state>
                 </option>
                 <option>
                     <name>IlinkDebugInfoEnable</name>

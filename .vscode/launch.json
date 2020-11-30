@@ -1,0 +1,45 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+        "name": "Run",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}\\${command:iar-settings.project-configuration}\\Exe\\${workspaceFolderBasename}.out",
+        "stopAtEntry": false,
+        "cwd": "${workspaceFolder}",
+        "externalConsole": false,
+        "MIMode": "gdb",
+        "miDebuggerPath": "arm-none-eabi-gdb.exe",
+        "debugServerPath": "JLinkGDBServerCL.exe",
+        "debugServerArgs": "-if swd -singlerun -strict -endian little -speed auto -port 3333 -device STM32F407VE -vd -strict -halt",
+        "serverLaunchTimeout": 5000,
+        "filterStderr": false,
+        "filterStdout": false,
+        "setupCommands": [
+            { "text": "target remote localhost:3333" },
+            { "text": "monitor reset" }
+            ]
+        },
+        {
+        "name": "Debug",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}\\${command:iar-settings.project-configuration}\\Exe\\${workspaceFolderBasename}.out",
+        "stopAtEntry": true,
+        "cwd": "${workspaceFolder}",
+        "externalConsole": false,
+        "MIMode": "gdb",
+        "miDebuggerPath": "arm-none-eabi-gdb.exe",
+        "debugServerPath": "JLinkGDBServerCL.exe",
+        "debugServerArgs": "-if swd -singlerun -strict -endian little -speed auto -port 3333 -device STM32F407VE -vd -strict -halt",
+        "serverLaunchTimeout": 5000,
+        "filterStderr": false,
+        "filterStdout": false,
+        "setupCommands": [
+            { "text": "target remote localhost:3333" },
+            { "text": "monitor reset" }
+        ]
+    }],
+    "compounds": []
+}
