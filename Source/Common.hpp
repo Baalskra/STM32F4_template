@@ -1,0 +1,16 @@
+#pragma once
+
+#include "EXTI.hpp"
+#include "FLASH.hpp"
+#include "GPIOA.hpp"
+#include "GPIOB.hpp"
+#include "GPIOC.hpp"
+#include "GPIOD.hpp"
+#include "GPIOE.hpp"
+#include "GPIOF.hpp"
+#include "GPIOG.hpp"
+#include "GPIOH.hpp"
+#include "GPIOI.hpp"
+#include "RCC.hpp"
+#include "SYSCFG.hpp"
+#include "USART1.hpp"

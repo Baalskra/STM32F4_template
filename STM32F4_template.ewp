@@ -2221,44 +2221,20 @@
                 <name>$PROJ_DIR$\Registers\STM32F4\SYSCFGBase.hpp</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\Registers\STM32F4\Target.hpp</name>
-            </file>
-            <file>
                 <name>$PROJ_DIR$\Registers\STM32F4\USART1.hpp</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\Registers\STM32F4\USART1Base.hpp</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\Registers\STM32F4\Voltage.hpp</name>
             </file>
         </group>
     </group>
     <group>
         <name>Source</name>
         <file>
-            <name>$PROJ_DIR$\Source\Button.hpp</name>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\Source\Clock.hpp</name>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\Source\global.hpp</name>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\Source\GPIO.hpp</name>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\Source\interrupts.cpp</name>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\Source\Led.hpp</name>
+            <name>$PROJ_DIR$\Source\Common.hpp</name>
         </file>
         <file>
             <name>$PROJ_DIR$\Source\main.cpp</name>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\Source\PinList.hpp</name>
         </file>
     </group>
 </project>
