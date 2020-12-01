@@ -4,7 +4,7 @@
 #include "FLASH.hpp"
 #include "GPIOA.hpp"
 #include "GPIOB.hpp"
-#include "GPIOC.hpp"
+#include "GPIOC.hpp"        
 #include "GPIOD.hpp"
 #include "GPIOE.hpp"
 #include "GPIOF.hpp"
@@ -14,3 +14,4 @@
 #include "RCC.hpp"
 #include "SYSCFG.hpp"
 #include "USART1.hpp"
+#include "Clock.hpp"

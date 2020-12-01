@@ -2461,10 +2461,52 @@
                 <name>$PROJ_DIR$\Registers\STM32F4\GPIOABase.hpp</name>
             </file>
             <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\GPIOB.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\GPIOBBase.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\GPIOC.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\GPIOCBase.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\GPIOD.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\GPIODBase.hpp</name>
+            </file>
+            <file>
                 <name>$PROJ_DIR$\Registers\STM32F4\GPIOE.hpp</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\Registers\STM32F4\GPIOEBase.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\GPIOF.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\GPIOFBase.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\GPIOG.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\GPIOGBase.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\GPIOH.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\GPIOHBase.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\GPIOI.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\GPIOIBase.hpp</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\Registers\STM32F4\MCUs.hpp</name>
@@ -2492,7 +2534,13 @@
     <group>
         <name>Source</name>
         <file>
+            <name>$PROJ_DIR$\Source\Clock.hpp</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\Source\Common.hpp</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Source\InterruptHandlers.cpp</name>
         </file>
         <file>
             <name>$PROJ_DIR$\Source\main.cpp</name>

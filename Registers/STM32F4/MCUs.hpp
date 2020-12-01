@@ -57,3 +57,6 @@ struct Voltage_2_7_to_3_6 {};
 
 using Voltage = Voltage_2_7_to_3_6;
 using Target = STM32F407VE;
+
+constexpr auto hsi_value = 16000000;
+constexpr auto hse_value = 8000000;
