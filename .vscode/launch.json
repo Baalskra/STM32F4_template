@@ -18,7 +18,7 @@
         "filterStdout": false,
         "setupCommands": [
             { "text": "target remote localhost:3333" },
-            { "text": "monitor reset" }
+            { "text": "monitor reset" },
             ]
         },
         {
@@ -38,7 +38,7 @@
         "filterStdout": false,
         "setupCommands": [
             { "text": "target remote localhost:3333" },
-            { "text": "monitor reset" }
+            { "text": "monitor reset" },
         ]
     }],
     "compounds": []

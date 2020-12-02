@@ -2279,6 +2279,9 @@
             <name>$PROJ_DIR$\Source\Common.hpp</name>
         </file>
         <file>
+            <name>$PROJ_DIR$\Source\GPIO.hpp</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\Source\InterruptHandlers.cpp</name>
         </file>
         <file>

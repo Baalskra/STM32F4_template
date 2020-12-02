@@ -15,3 +15,4 @@
 #include "SYSCFG.hpp"
 #include "USART1.hpp"
 #include "Clock.hpp"
+#include "GPIO.hpp"

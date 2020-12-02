@@ -10,6 +10,23 @@ class RCC: protected RCCBase<Target>
 	static constexpr auto lock_timeout = 0x500;
 	
 protected:
+	template<typename ... Periph>
+	static void _Enable()
+	{
+		(Periph::Enable(), ...);
+	}
+	
+	template<typename ... Periph>
+	static void _Disable()
+	{
+		(Periph::Disable(), ...);
+	}
+	
+	template<typename ... Periph>
+	static void _Reset()
+	{
+		(Periph::_Reset(), ...);
+	}
 	static bool IsInternalCrystalPLLSource()
 	{
 		return PLLCFGR::PLLSRC::HSI::IsSet();
