@@ -2433,6 +2433,9 @@
                     <name>$PROJ_DIR$\Registers\STM32F4\Field_values\common_field_values.hpp</name>
                 </file>
                 <file>
+                    <name>$PROJ_DIR$\Registers\STM32F4\Field_values\dbgmcu_field_values.hpp</name>
+                </file>
+                <file>
                     <name>$PROJ_DIR$\Registers\STM32F4\Field_values\flash_field_values.hpp</name>
                 </file>
                 <file>
@@ -2451,12 +2454,21 @@
                     <name>$PROJ_DIR$\Registers\STM32F4\Field_values\rtc_field_values.hpp</name>
                 </file>
                 <file>
+                    <name>$PROJ_DIR$\Registers\STM32F4\Field_values\spi_field_values.hpp</name>
+                </file>
+                <file>
                     <name>$PROJ_DIR$\Registers\STM32F4\Field_values\syscfg_field_values.hpp</name>
                 </file>
                 <file>
                     <name>$PROJ_DIR$\Registers\STM32F4\Field_values\usart_field_values.hpp</name>
                 </file>
             </group>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\DBGMCU.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\DBGMCUBase.hpp</name>
+            </file>
             <file>
                 <name>$PROJ_DIR$\Registers\STM32F4\EXTI.hpp</name>
             </file>
@@ -2549,6 +2561,12 @@
             </file>
             <file>
                 <name>$PROJ_DIR$\Registers\STM32F4\RTCBase.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\SPI1.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\SPI1Base.hpp</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\Registers\STM32F4\SYSCFG.hpp</name>

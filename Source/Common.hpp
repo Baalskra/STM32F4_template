@@ -24,3 +24,5 @@
 #include "PWR.hpp"
 #include "RTC.hpp"
 #include "RNG.hpp"
+#include "DBGMCU.hpp"
+#include "SPI1.hpp"
