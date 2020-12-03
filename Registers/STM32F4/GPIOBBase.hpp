@@ -10,7 +10,7 @@ class GPIOBBase
 	
 private:
 	// Адреса регистров.
-	static constexpr auto gpio_address 		= 0x40020000;
+	static constexpr auto gpio_address 		= 0x40020400;
 	static constexpr auto moder_address 	= gpio_address + 0x00;
 	static constexpr auto otyper_address 	= gpio_address + 0x04;
 	static constexpr auto ospeedr_address 	= gpio_address + 0x08;
