@@ -6,8 +6,16 @@ class GPIO: protected RCC
 {
     GPIO() = delete;
 
-protected:
-//public: Test
+public:
+	template<typename ... Pins>
+    struct PinList
+    {
+        static void Initialize()
+        {
+            (Pins::Initialize(), ...);
+        }
+    };
+
 	enum class Type
 	{
 		PushPull = 0,
@@ -20,6 +28,9 @@ protected:
         Up,
         Down,
     };
+
+protected:
+//public: Test
 
     template<typename GPIO, uint16_t pin, Type type = Type::PushPull, uint8_t speed = 2>
 	struct OutputPin
@@ -51,14 +62,55 @@ protected:
 		}
 	};
 
-    template<typename ... Pins>
-    struct PinList
-    {
-        static void Initialize()
-        {
-            (Pins::Initialize(), ...);
-        }
-    };
+	template<typename GPIO, uint16_t pin>
+	static void WritePin(bool value)
+	{
+		static_assert(pin < 16, "Pin number must be from 0 to 15");
+		
+		GPIO::BSRR::Set(1 << pin + 16 * (!value));
+	}
+		
+	template<typename GPIO, uint16_t pin>
+	static void _Toggle(void)
+	{
+		static_assert(pin < 16, "Pin number must be from 0 to 15");
+		
+		GPIO::ODR::Set(GPIO::ODR::Get() ^ (1 << pin));
+	}
+		
+	template<typename GPIO>
+	static void WriteGPIO(uint16_t data)
+	{
+		GPIO::ODR::Set(data);
+	}
+	
+	template<typename GPIO, uint16_t pin>
+	static bool ReadInputPin(void)
+	{
+		static_assert(pin < 16, "Pin number must be from 0 to 15");
+		
+		return GPIO::IDR::Get() & (1 << pin);
+	}
+		
+	template<typename GPIO, uint16_t pin>
+	static bool ReadOutputPin(void)
+	{
+		static_assert(pin < 16, "Pin number must be from 0 to 15");
+		
+		return GPIO::ODR::Get() & (1 << pin);
+	}
+		
+	template<typename GPIO>
+	static uint16_t ReadInputGPIO(void)
+	{
+		return GPIO::IDR::Get();
+	}
+		
+	template<typename GPIO>
+	static uint16_t ReadOutputGPIO(void)
+	{
+		return GPIO::ODR::Get();
+	}
 
 private:
     enum class Mode
