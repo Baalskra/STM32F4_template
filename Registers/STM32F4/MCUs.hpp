@@ -50,4 +50,13 @@ struct STM32F42_43xxx: public STM32F427_437xx, public STM32F429_439xx {};
 // Все семейство STM32F4
 struct STM32F4xxxx: public STM32F42_43xxx, public STM32F40_41xxx {};
 
+struct Voltage_1_8_to_2_1 {};
+struct Voltage_2_1_to_2_4 {};
+struct Voltage_2_4_to_2_7 {};
+struct Voltage_2_7_to_3_6 {};
+
+using Voltage = Voltage_2_7_to_3_6;
 using Target = STM32F407VE;
+
+constexpr auto hsi_value = 16000000;
+constexpr auto hse_value = 8000000;

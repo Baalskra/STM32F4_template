@@ -1,7 +1,6 @@
 #pragma once
 
 #include "MCUs.hpp"
-#include "Voltage.hpp"
 #include "FLASHBase.hpp"
 
 class FLASH: protected FLASHBase<Target>
@@ -12,22 +11,39 @@ protected:
 	template<uint8_t latency>
 	static void SetLatency()
 	{
-		FLASH::ACR::LATENCY::Set(latency);
+		static_assert(latency <= 7, "Latency must be less or equal 7");
+
+		ACR::LATENCY::Set(latency);
 	}
 	
 	static void DataCacheEnable()
 	{
-		FLASH::ACR::DCEN::ENABLED::Set();
+		ACR::DCEN::ENABLED::Set();
+	}
+
+	static void DataCacheDisable()
+	{
+		ACR::DCEN::DISABLED::Set();
 	}
 	
 	static void InstructionCacheEnable()
 	{
-		FLASH::ACR::ICEN::ENABLED::Set();
+		ACR::ICEN::ENABLED::Set();
+	}
+
+	static void InstructionCacheDisable()
+	{
+		ACR::ICEN::DISABLED::Set();
 	}
 	
 	static void PrefetchEnable()
 	{
-		FLASH::ACR::PRFTBEN::ENABLED::Set();
+		ACR::PRFTBEN::ENABLED::Set();
+	}
+
+	static void PrefetchDisable()
+	{
+		ACR::PRFTBEN::DISABLED::Set();
 	}
 
 };

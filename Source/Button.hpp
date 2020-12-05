@@ -16,17 +16,15 @@ class Button: protected GPIO
 public:
 	static void Initialize()
 	{
-		InputPin<GPIO_, pin, Input, pull>::Initialize();
+		InputPin<GPIO_, pin, pull>::Initialize();
 	}
 	
 	static ButtonState Get()
 	{
 		ButtonState state;
 		
-		if(ReadInputPin<GPIO_, pin>())
-			state = (pull == Pull_up) ? Released : Pressed;
-		else
-			state = (pull == Pull_up) ? Pressed : Released;
+		if(ReadInputPin<GPIO_, pin>())  state = (pull == Pull::Up) ? Released : Pressed;
+		else                            state = (pull == Pull::Up) ? Pressed : Released;
 			
 		return state;	
 	}
@@ -34,12 +32,21 @@ public:
 	// Метод запроса состояния кнопки (нажата ли).
 	static bool IsPressed()
 	{
-		return (pull == Pull_up) ? (!ReadInputPin<GPIO_, pin>()) : ReadInputPin<GPIO_, pin>();
+		return (pull == Pull::Up) ? (!ReadInputPin<GPIO_, pin>()) : ReadInputPin<GPIO_, pin>();
 	}
 	
 	// Метод запроса состояния кнопки (отпущена ли).
 	static bool IsReleased()
 	{
-		return (pull == Pull_up) ? ReadInputPin<GPIO_, pin>() : (!ReadInputPin<GPIO_, pin>());
+		return (pull == Pull::Up) ? ReadInputPin<GPIO_, pin>() : (!ReadInputPin<GPIO_, pin>());
 	}
+};
+
+template<typename ... Buttons>
+struct ButtonList
+{
+    static void Initialize()
+    {
+        (Buttons::Initialize(), ...);
+    }
 };

@@ -2433,13 +2433,28 @@
                     <name>$PROJ_DIR$\Registers\STM32F4\Field_values\common_field_values.hpp</name>
                 </file>
                 <file>
+                    <name>$PROJ_DIR$\Registers\STM32F4\Field_values\dbgmcu_field_values.hpp</name>
+                </file>
+                <file>
                     <name>$PROJ_DIR$\Registers\STM32F4\Field_values\flash_field_values.hpp</name>
                 </file>
                 <file>
                     <name>$PROJ_DIR$\Registers\STM32F4\Field_values\gpio_field_values.hpp</name>
                 </file>
                 <file>
+                    <name>$PROJ_DIR$\Registers\STM32F4\Field_values\pwr_field_values.hpp</name>
+                </file>
+                <file>
                     <name>$PROJ_DIR$\Registers\STM32F4\Field_values\rcc_field_values.hpp</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\Registers\STM32F4\Field_values\rng_field_values.hpp</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\Registers\STM32F4\Field_values\rtc_field_values.hpp</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\Registers\STM32F4\Field_values\spi_field_values.hpp</name>
                 </file>
                 <file>
                     <name>$PROJ_DIR$\Registers\STM32F4\Field_values\syscfg_field_values.hpp</name>
@@ -2448,6 +2463,18 @@
                     <name>$PROJ_DIR$\Registers\STM32F4\Field_values\usart_field_values.hpp</name>
                 </file>
             </group>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\DBGMCU.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\DBGMCUBase.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\EXTI.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\EXTIBase.hpp</name>
+            </file>
             <file>
                 <name>$PROJ_DIR$\Registers\STM32F4\FLASH.hpp</name>
             </file>
@@ -2461,13 +2488,61 @@
                 <name>$PROJ_DIR$\Registers\STM32F4\GPIOABase.hpp</name>
             </file>
             <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\GPIOB.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\GPIOBBase.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\GPIOC.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\GPIOCBase.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\GPIOD.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\GPIODBase.hpp</name>
+            </file>
+            <file>
                 <name>$PROJ_DIR$\Registers\STM32F4\GPIOE.hpp</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\Registers\STM32F4\GPIOEBase.hpp</name>
             </file>
             <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\GPIOF.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\GPIOFBase.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\GPIOG.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\GPIOGBase.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\GPIOH.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\GPIOHBase.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\GPIOI.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\GPIOIBase.hpp</name>
+            </file>
+            <file>
                 <name>$PROJ_DIR$\Registers\STM32F4\MCUs.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\PWR.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\PWRBase.hpp</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\Registers\STM32F4\RCC.hpp</name>
@@ -2476,13 +2551,40 @@
                 <name>$PROJ_DIR$\Registers\STM32F4\RCCBase.hpp</name>
             </file>
             <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\RNG.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\RNGBase.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\RTC.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\RTCBase.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\SPI1.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\SPI1Base.hpp</name>
+            </file>
+            <file>
                 <name>$PROJ_DIR$\Registers\STM32F4\SYSCFG.hpp</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\Registers\STM32F4\SYSCFGBase.hpp</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\Registers\STM32F4\Target.hpp</name>
+                <name>$PROJ_DIR$\Registers\STM32F4\UART4.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\UART4Base.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\UART5.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\UART5Base.hpp</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\Registers\STM32F4\USART1.hpp</name>
@@ -2491,35 +2593,41 @@
                 <name>$PROJ_DIR$\Registers\STM32F4\USART1Base.hpp</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\Registers\STM32F4\Voltage.hpp</name>
+                <name>$PROJ_DIR$\Registers\STM32F4\USART2.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\USART2Base.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\USART3.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\USART3Base.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\USART6.hpp</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\Registers\STM32F4\USART6Base.hpp</name>
             </file>
         </group>
     </group>
     <group>
         <name>Source</name>
         <file>
-            <name>$PROJ_DIR$\Source\Button.hpp</name>
-        </file>
-        <file>
             <name>$PROJ_DIR$\Source\Clock.hpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\Source\global.hpp</name>
+            <name>$PROJ_DIR$\Source\Common.hpp</name>
         </file>
         <file>
             <name>$PROJ_DIR$\Source\GPIO.hpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\Source\interrupts.cpp</name>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\Source\Led.hpp</name>
+            <name>$PROJ_DIR$\Source\InterruptHandlers.cpp</name>
         </file>
         <file>
             <name>$PROJ_DIR$\Source\main.cpp</name>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\Source\PinList.hpp</name>
         </file>
     </group>
 </project>

@@ -7,10 +7,11 @@
 class GPIOE: protected GPIOEBase<Target>, protected RCCBase<Target>
 {
 	GPIOE() = delete;
-	
+
 	friend class GPIO;
-	
-public:
+	friend class RCC;
+
+protected:
 	static void Enable()
 	{
 		AHB1ENR::GPIOEEN::ENABLED::Set();

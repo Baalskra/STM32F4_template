@@ -3,9 +3,9 @@
 
 void IRQ::NMI_Handler(void)
 {
-	if(!Clock::IsClockSecurityOk())
+	if(Clock::IsSecurityFailed())
 	{
 		Clock::Initialize();
-		Clock::ClockSecurityFlagClear();
+		Clock::ClearSecurityFlag();
 	}
 }
