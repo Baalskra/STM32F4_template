@@ -2,6 +2,10 @@
     "files.associations": {
         "type_traits": "cpp",
         "xstddef": "cpp",
-        "xtr1common": "cpp"
+        "xtr1common": "cpp",
+        "cstddef": "cpp",
+        "cstdint": "cpp",
+        "cstdlib": "cpp",
+        "initializer_list": "cpp"
     }
 }

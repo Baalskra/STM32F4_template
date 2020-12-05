@@ -26,3 +26,4 @@
 #include "RNG.hpp"
 #include "DBGMCU.hpp"
 #include "SPI1.hpp"
+#include "DMA.hpp"
